@@ -1,3 +1,5 @@
+git submodule init
+git submodule update --recursive
 origin=$(pwd)
 cd libmp3lame && ./configure --prefix=/opt/apps && make -j8 install
 cd $origin
